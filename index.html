@@ -9,15 +9,20 @@
 </head>
 <body onload="changetext()">
     <div class="center">
-        <button id="id01" type="button" onmouseover="this.innerHTML='Woof! Woof!';">Doggo</button> 
+        <button id="button01" type="button" onmouseover="this.innerHTML='Woof! Woof!'" onclick="showimage()" >Doggo</button> 
     </div>
 
-    <img id="image" src="images/doge.png">
+    <img id="image01" src="images/doge.png">
 
 
 <script>
     function changetext() {
-        document.getElementById("id01").innerHTML = 'Woof!';
+        document.getElementById("button01").innerHTML = 'Woof!';
+    }
+
+    function showimage() {
+        document.getElementById('image01').style.visibility=    
+        document.getElementById('image01').style.visibility == 'visible'? 'hidden' : 'visible';
     }
 </script>
 
