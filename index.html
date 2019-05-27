@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Doge JS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body onload="changetext()">
     <div class="center">
         <button id="button01" type="button" onmouseover="this.innerHTML='Woof! Woof!'" onclick="showimage()" >Doggo</button> 
@@ -15,16 +17,8 @@
     <img id="image01" src="images/doge.png">
 
 
-<script>
-    function changetext() {
-        document.getElementById("button01").innerHTML = 'Woof!';
-    }
-
-    function showimage() {
-        document.getElementById('image01').style.visibility=    
-        document.getElementById('image01').style.visibility == 'visible'? 'hidden' : 'visible';
-    }
-</script>
+<script src="changetext.js"></script>
+<script src="showimage.js"></script>
 
 </body>
 
