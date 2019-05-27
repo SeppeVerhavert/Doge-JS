@@ -12,9 +12,13 @@
         <button id="Doge" type="button" onmouseover="this.innerHTML='Woof! Woof!';" onclick="getElementById('demo').innerHTML=Date()">Doggo</button> 
     </div>
 
-    <img href="images/doge.png">
+    <img id="image" src="images/doge.png">
+
 <script>
     document.getElementById("Doge").innerHTML = "Woof!";
+    document.getElementById("Doge").onclick = function() {
+    document.getElementById("image").style.visibility = "visible";
+}
 </script>
 
 
